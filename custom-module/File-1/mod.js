@@ -24,5 +24,5 @@ module.exports = {
   avg: average,
   user: "sagar",
   age: 25,
-  fact: factorial
+  fact: factorial,
 };
