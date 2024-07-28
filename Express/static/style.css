@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: rgb(165, 104, 13);
+}
+
+nav{
+    padding: 15px 20px;
+    display: flex;
+    background-color: rgb(37, 37, 0);
+    align-items: center;
+}
+
+li{
+    list-style: none;
+    padding: 5px 20px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+li a{text-decoration: none;}
+
+h1{
+    padding: 2rem;
+    text-decoration: underline;
+}
