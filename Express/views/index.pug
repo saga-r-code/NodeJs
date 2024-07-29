@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>#{title}</title>
     style
         include ../static/style.css
 </head>
 <body>
-    <div class="coantiner">
+    <img src="/static/gym.jpg" alt="">
+    <div class="container">
         <nav>
             <li><a href="/home">Home</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/demo">Contact</a></li>
         </nav>
-    <h1>#{heading}</h1>
-    <!-- <p>
-       | #{content} 
-       This is plain html in pug
-    </p> -->
+        <h1>Get This Gym MemberShip for 60$ -Fill this form now!</h1>
+    //- <h1>#{heading}</h1>
+    //- <!-- <p>
+    //-    | #{content} 
+    //-    This is plain html in pug
+    //- </p> -->
+
+    <form action="/" id="contact" method="post">
+        <input type="text" name="name" id="name" placeholder="Enter Your Name" />
+        <input type="text" name="age" id="age" placeholder="Enter Your Age" />
+        <div class="gender">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="Male"/>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="Female"/>
+        </div>
+        <div class="details">
+        <textarea name="address" id="address" cols="30" rows="10" placeholder="Enter Your Address........" required></textarea>
+        <textarea name="moreDetails" id="moreDetails" cols="30" rows="10" placeholder="More About You........" required></textarea>
+    </div>
+        <input type="submit" value="Submit" class="btn">
+    </form>
+    
 </div>
 </body>
 </html>
