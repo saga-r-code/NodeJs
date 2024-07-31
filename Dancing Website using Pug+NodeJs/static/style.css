@@ -14,9 +14,17 @@ img {
   height: 100vh;
   z-index: -1;
   background-size: cover;
-  filter:blur(3px) grayscale(.4);
+  filter: blur(3px) grayscale(0.4);
   border-radius: 20px;
+  position: fixed;
+}
 
+ul h1 {
+  color: bisque;
+  font-weight: bold;
+  font-size: 2rem;
+  user-select: none;
+  margin-right: 40px;
 }
 
 #nav ul {
@@ -27,7 +35,7 @@ img {
   background-color: #000000;
   border: 2px solid rgb(188, 188, 188);
   padding: 20px;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   gap: 30px;
   border-radius: 0px 0px 5px 5px;
@@ -67,31 +75,85 @@ li a {
   font-weight: 500;
 }
 
-#details {
+
+
+#mission {
+  background: #3e5151; 
+  background: -webkit-linear-gradient(
+    to right,
+    #d6b97e,
+    #323e3e
+  ); 
+  background: linear-gradient(
+    to right,
+    #decba4,
+    #778787
+  ); 
+
+  height: 35vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+#mission h1 {
+  color: rgb(106, 62, 8);
+  font-size: 2.5rem;
+  padding: 10px 4vw;
+}
+
+.cardContainer {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+}
+
+.card {
+  background-color: rgb(227, 225, 225);
+  height: 25vh;
+  width: 30vw;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+#sponsors {
   background-color: rgb(179, 152, 120);
   height: 30vh;
   width: 100vw;
-  color: bisque;
 }
 
-#mission {
+#sponsors h1{
+  color: rgb(106, 62, 8);
+  font-size: 2.5rem;
+  padding: 10px 4vw;
+}
+
+.sponsorsLogo{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-size: x-large;
+  font-weight: bold;
+  padding: 20px 0px;
+}
+
+.sponsorsLogo li{
+  border: 2px solid blanchedalmond;
+  padding: 10px;
+  color: rgb(30, 3, 3);
+}
+
+
+
+
+footer {
+  height: 10vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(219, 196, 141);
-  height: 30vh;
-  width: 100vw;
-  color: bisque;
-}
-
-footer{
-    height: 20vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: blanchedalmond;   
+  background-color: blanchedalmond;
 }

@@ -24,7 +24,7 @@ app.get("/demo", (req, res)=>{
 app.get("/", (req,res)=>{
     const heading = "Get This Gym MemberShip for 60$ -Fill this form now!"
     const param = {"title": "PUG", "heading" : heading}
-    res.status(200).render("index.pug", param)
+    res.status(200).render("gym-form.pug", param)
 })
 
 app.post('/', (req, res)=>{

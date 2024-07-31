@@ -7,7 +7,10 @@ html
   body
     img(src="../static/dance.jpg", alt="")
     nav#nav
-     ul
+      
+      ul
+        div#logo
+         h1 LOGO HERE
         li #[a(href='/') Home]
         li #[a(href='/') About]
         li #[a(href='/') Service]
@@ -17,12 +20,27 @@ html
     section#bodyContain
         p Join our Company to teach you
         h2 DANCE
+
     section#mission
-        div Our Mission 
-          .card-conatiner 
-    section#details
-        div Academy Details
+        h1 Our Mission 
+        div.cardContainer
+          div.card
+            h3 Dance Perfection
+          div.card
+            h3 Dance the way you like
+          div.card
+            h3 Expert Teacher
+
+    section#sponsors
+        h1 Our Sponsors
+        div.sponsorsLogo
+          li Logo 1
+          li Logo 2
+          li Logo 3
+          li Logo 4
+          li Logo 5 
+
     footer
-        div Academy Fotter
+        div Copyright © 2024 sagee_dance_academy@gmail.com | All right reserved
     script
       include ../static/index.js
