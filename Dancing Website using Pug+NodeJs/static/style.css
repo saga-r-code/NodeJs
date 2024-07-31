@@ -14,7 +14,7 @@ img {
   height: 100vh;
   z-index: -1;
   background-size: cover;
-  filter:grayscale(1)  blur(3px);
+  filter:blur(3px) grayscale(.4);
   border-radius: 20px;
 
 }
@@ -72,6 +72,16 @@ li a {
   justify-content: center;
   align-items: center;
   background-color: rgb(179, 152, 120);
+  height: 30vh;
+  width: 100vw;
+  color: bisque;
+}
+
+#mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(219, 196, 141);
   height: 30vh;
   width: 100vw;
   color: bisque;
