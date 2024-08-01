@@ -28,7 +28,6 @@ ul h1 {
 }
 
 #nav ul {
-  position: fixed;
   width: 100vw;
   display: flex;
   list-style: none;
@@ -147,9 +146,7 @@ li a {
 }
 
 
-
-
-footer {
+footer div{
   height: 10vh;
   width: 100vw;
   display: flex;

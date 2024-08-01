@@ -1,22 +1,13 @@
-doctype html
-html
-  head
-    title Sagee Dance Academy
-    style
-      include ../static/style.css
-  body
-    img(src="../static/dance.jpg", alt="Dance Image")
-    nav#nav
-      
-      ul
-        div#logo
-         h1 LOGO HERE
-        li #[a(href='/') Home]
-        li #[a(href='/') About]
-        li #[a(href='/') Service]
-        li #[a(href='/') Class Info]
-        li #[a(href='/') Contact us]
+extends base.pug
 
+block scripts
+  script(src='/static/index.js')
+
+block style 
+  style
+    include ../static/style.css
+
+block content
     section#bodyContain
         p Join our Company to teach you
         h2 DANCE
@@ -40,7 +31,7 @@ html
           li Logo 4
           li Logo 5 
 
+block foot 
     footer
         div Copyright © 2024 sagee_dance_academy@gmail.com | All right reserved
-    script
-      include ../static/index.js
+              

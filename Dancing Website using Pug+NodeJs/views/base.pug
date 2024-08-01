@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title My Site 
+    block scripts 
+    block style 
+  body
+    img(src="../static/dance.jpg", alt="Dance Image")
+    nav#nav
+      ul
+        div#logo
+          h1 LOGO HERE
+        li
+          a(href='/') Home
+        li
+          a(href='/about') About
+        li
+          a(href='/service') Service
+        li
+          a(href='/classinfo') Class Info
+        li
+          a(href='/contactus') Contact Us
+
+    block content
+    block foot
